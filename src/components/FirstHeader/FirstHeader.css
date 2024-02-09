@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    .first-header{
+        width: 100%;
+    }
+    .logoLetterb2{
+        width: 56%;
+        margin-bottom: 3.7%;
+    }
+    .description{
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-size: 1.4rem;
+        margin-top: 8%;
+        color: white;
+    }
+    .headerImage{
+      width: 100%;
+    }
+    .headerContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 55.5vw;
+    }
+    .headerContentText{
+        width: 100%;
+        background-color: #14181c;
+    }
+    button{
+      background-color: #00c030;
+      font-family: "Lato", sans-serif;
+      color: white;
+      font-style: bold;
+      letter-spacing: 0.13em;
+      padding: 2%;
+      padding-left: 4%;
+      padding-right: 4%;
+      border: 0px none;
+      margin-top: 8%;
+    }
+}

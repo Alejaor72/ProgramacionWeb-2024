@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+   .Banner{
+    width: 99%;
+    margin: 0%;
+    padding: 2%;
+    background-color: #14181c;
+    display: flex;
+    justify-content:end;
+   }
+   .Bottoms{
+    display: none;
+    width: 0%;
+   }
+   .input{
+    display: none;
+    width: 0%;
+   }
+   .logoLetterb{
+    display: none;
+    width: 0%;
+   }
+   .iconsBanner{
+    display: flex;
+    padding: 1%;
+    justify-content: end;
+   }
+   .iconB{
+    margin-right: 4%;
+   }
+}
