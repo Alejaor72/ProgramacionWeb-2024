@@ -34,11 +34,23 @@
       font-family: "Lato", sans-serif;
       color: white;
       font-style: bold;
+      font-size: 0.9rem;
       letter-spacing: 0.13em;
       padding: 2%;
-      padding-left: 4%;
-      padding-right: 4%;
+      padding-left: 5%;
+      padding-right: 5%;
       border: 0px none;
       margin-top: 8%;
+      border-radius: 5px;
+    }
+    .lastpart{
+      font-family: "Lato", sans-serif;
+      color: #778899;
+      letter-spacing: 0.03em;
+      margin-top: 8%;
+      line-height:150%;
+    }
+    .socialIcons{
+        margin-top: 5%;
     }
 }

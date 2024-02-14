@@ -20,7 +20,7 @@ export function Banner(){
          </div>
          <div className="iconsBanner">
             <img src="https://i.postimg.cc/vHBddxDR/Group-3.png" alt="" className="iconB" width="7%"/>
-            <img src="https://i.postimg.cc/7LQK0bwz/Combined-Shape.png" alt="" className="iconB" width="7%"/>
+            <img src="https://i.postimg.cc/7LQK0bwz/Combined-Shape.png" alt="" className="iconB" width="6%"/>
            <img src="https://i.postimg.cc/YSJ9QpRG/Group.png" alt="searchIcon" className="iconB" width="5%"/>
          </div>
        </div>

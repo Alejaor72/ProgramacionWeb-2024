@@ -17,8 +17,8 @@ export function FirstHeader(){
                     </p>
                     <button>GET STARTED - ITS FREE!</button>
                     <div className="lastpart">
-                        <p>The social network for film lovers.  Also available on</p>
-                        <img src="https://s.ltrbxd.com/static/img/app-platforms.ce52a01b.svg" alt="appleicon" />
+                        <p>The social network for film lovers. <br /> Also available on</p>
+                        <img src="https://s.ltrbxd.com/static/img/app-platforms.ce52a01b.svg" alt="appleicon" className="socialIcons" />
                     </div>
                 </div>
             </div>
