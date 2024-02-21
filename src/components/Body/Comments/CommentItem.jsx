@@ -1,6 +1,6 @@
 import React from "react"
 
-export function Movie(props) {
+export function Comment(props) {
     const {url} = props
     return (
 

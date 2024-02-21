@@ -3,6 +3,7 @@ import React from 'react'
 import { Banner } from "./components/Banner/Banner"
 import { FirstHeader } from './components/FirstHeader/FirstHeader'
 import { Body } from "./components/Body/Body";
+import { Footer } from "./components/Footer/Footer";
 
 export default function App(){
     return(
@@ -10,6 +11,7 @@ export default function App(){
             <Banner/>
             <FirstHeader/>
             <Body/>
+            <Footer/>
         </>
     )
 }

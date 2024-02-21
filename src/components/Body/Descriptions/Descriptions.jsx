@@ -4,8 +4,8 @@ import './Descriptions.css'
 export function Descriptions(){
     return(
         <>
-        <p>LETTERBOXD LETS YOU…</p>
-        <div>
+        <p className="title">LETTERBOXD LETS YOU…</p>
+        <div  id='description'>
         <section className="green">
             <img src="https://i.postimg.cc/PxjQmD0P/Fill-117-Copy.png" alt="" />
             <p>Keep track of every film youve ever watched (or just start from the day you join)</p>
