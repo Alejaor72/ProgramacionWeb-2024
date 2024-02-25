@@ -1,3 +1,4 @@
+@media (max-width: 768px) {
 main{
     padding-left: 4%;
     padding-right: 4%;
@@ -194,4 +195,53 @@ main{
     font-family: inter;
     color: #99AABB;
     font-size: 0.87rem;
+}
+.StoriesContent #InfoRecent{
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.75rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.StoriesGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 0.6rem;
+    margin-top: 4%;
+}
+.StoriesCard{
+  background-color:#303439 ;
+  display: flex;
+  flex-direction: column;
+  width:  100%;
+}
+.StoriesCard .card-text{
+    padding: 2%;
+}
+.StoriesCard .User{
+    display: flex;
+    flex-direction: row;
+}
+.card-text{
+    width: 22em;
+}
+.card-text h3 {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    text-wrap: balance;
+    color: white;
+    white-space: pre-wrap;
+}
+.StoriesCard img{
+    width: 100%;
+}
 }

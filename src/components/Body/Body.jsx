@@ -5,7 +5,9 @@ import { movies2 } from '../../Data/movies2'
 import { movies3 } from '../../Data/movies3'
 import { movies4 } from '../../Data/movies4'
 import { movies5 } from '../../Data/movies5'
+import { movies6 } from '../../Data/movies6'
 import { Movies } from './Movies/MoviesGroup'
+import { StoriesGroup} from './Stories/StoriesGroup'
 import { RecentCards } from './RecentGroup/RecentGroup'
 import { Descriptions } from './Descriptions/Descriptions'
 
@@ -14,6 +16,7 @@ const moviedata2 = movies2;
 const moviedata3 = movies3;
 const moviedata4 = movies4;
 const moviedata5 = movies5;
+const moviedata6 = movies6;
 
 export function Body() {
 
@@ -60,6 +63,19 @@ export function Body() {
                 <h2>Write and share reviews. Compile<br />your own lists. Share your life<br />in film.</h2>
                 <p>Below are some popular reviews and lists from this week. </p>
                 <p>Sign Up to create your own.</p>
+            </div>
+
+            <div className='StoriesContent'>
+                <div id='InfoRecent'>
+                  <h3>RECENT STORIES</h3>
+                  <p>ALL HQS</p> 
+                </div>
+                <hr />
+                   <StoriesGroup
+                    movies={moviedata6}
+
+                    >
+                    </StoriesGroup>
             </div>
 
             <div className='RecentCont'>

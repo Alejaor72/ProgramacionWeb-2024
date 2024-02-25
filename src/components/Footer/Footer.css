@@ -1,3 +1,4 @@
+@media (max-width: 768px) {
 .footer{
     padding-top: 5%;
     padding-bottom: 28%;
@@ -50,4 +51,5 @@ path{
 }
 svg{
     margin-right: 3%;
+}
 }
