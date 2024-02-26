@@ -54,3 +54,60 @@
         margin-top: 5%;
     }
 }
+@media (min-width: 1272px) {
+    .first-header{
+        width: 100%;
+    }
+    .logoLetterb2{
+        display: none;
+        width: 0%;
+    }
+    .description{
+        font-family: "Merriweather", serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 2.7rem;
+        color: white;
+    }
+    .headerImage{
+      width: 100%;
+    }
+    .headerContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin-top: -15%;
+    }
+    .headerContentText{
+        width: 100%;
+    }
+    button{
+      background-color: #00c030;
+      font-family: "Lato", sans-serif;
+      color: white;
+      font-style: bold;
+      font-size: 1.2rem;
+      letter-spacing: 0.13em;
+      padding: 1%;
+      padding-left: 3%;
+      padding-right: 3%;
+      border: 0px none;
+      margin-top: 5%;
+      border-radius: 5px;
+    }
+    .lastpart{
+      font-family: "Lato", sans-serif;
+      color: #778899;
+      letter-spacing: 0.03em;
+      margin-top: 5%;
+      line-height:150%;
+      font-size: 1.4rem;
+    }
+    .socialIcons{
+        margin-top: 3%;
+        width: 8%;
+    }
+}

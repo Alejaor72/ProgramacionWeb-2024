@@ -5,13 +5,13 @@ export function RecentCards(props) {
     const {movies} = props
     return (
 <>
-        
+        <div className="RecentGroup">
         {
             movies.map((movie)=> {
                 return  <RecentCard url={movie.url} title={movie.title} description={movie.description} />
             })
         }
-        
+        </div>
         </>
        
             

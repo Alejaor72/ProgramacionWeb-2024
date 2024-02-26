@@ -60,23 +60,11 @@ export function Body() {
             </div>
 
             <div className='PopularContent'>
-                <h2>Write and share reviews. Compile<br />your own lists. Share your life<br />in film.</h2>
-                <p>Below are some popular reviews and lists from this week. </p>
-                <p>Sign Up to create your own.</p>
+                <h2>Write and share reviews. Compile<br /> your own lists. Share your life<br /> in film.</h2>
+                <p>Below are some popular reviews and lists from this week. <br />
+                Sign Up to create your own</p>
             </div>
 
-            <div className='StoriesContent'>
-                <div id='InfoRecent'>
-                  <h3>RECENT STORIES</h3>
-                  <p>ALL HQS</p> 
-                </div>
-                <hr />
-                   <StoriesGroup
-                    movies={moviedata6}
-
-                    >
-                    </StoriesGroup>
-            </div>
 
             <div className='RecentCont'>
                 <div id='InfoRecent'>

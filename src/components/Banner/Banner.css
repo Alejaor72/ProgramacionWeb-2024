@@ -28,13 +28,17 @@
     margin-right: 4%;
    }
 }
-@media (min-width: 769px) {
+@media (min-width: 1272px) {
    .Banner{
-      width: 99%;
-      margin: 0%;
       padding: 2%;
       display: flex;
-      justify-content:end;
+      align-items: center;
+      justify-content: center;
+      padding-left: 4%;
+      padding-right: 4%;
+      position: absolute;
+      background: rgb(20,24,28);
+      background: linear-gradient(180deg, rgba(20,24,28,1) 0%, rgba(20,24,28,0.7191548494397759) 28%, rgba(20,24,28,0.5146730567226891) 50%, rgba(20,24,28,0) 98%);
      }
      .Bottoms{
       display: flex;
@@ -43,11 +47,11 @@
       gap: 26px;
       color: #E3E3E3;
       font-family: Inter;
-      font-size:  0.9rem;
+      font-size:  0.69rem;
       font-style: normal;
       font-weight: 800;
-      line-height: normal;
       letter-spacing: 0.96px;
+      margin-right: 5%;
      }
      .input{
       display: flex;
@@ -68,6 +72,7 @@
      .input img{
        width: 1.6em;
        height: 1.6em;
+       opacity: 100;
      }
      input{
       width: 100%;
@@ -75,15 +80,12 @@
       opacity: 0%;
       border: none;
      }
-     .logoLetterb{
-      display: flex;
-     }
      .iconsBanner{
       display: none;
       width: 0%;
      }
      .logoLetterb{
-      width: 56%;
-      margin-bottom: 3.7%;
+      width: 23%;
+      margin-right: 5%;
      }
 }
