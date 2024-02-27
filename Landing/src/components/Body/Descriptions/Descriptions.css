@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+.title{
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.8rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+section{
+    background-color: #445566;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.1);
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: start;
+    color: #DDEEFF;
+    font-family: inter;
+    line-height: 1.5;
+    gap: 4%;
+    margin-bottom: 3%;
+    font-size: 0.9em;
+}
+#description{
+    display: flex;
+    flex-direction: column;
+}
+section img{
+    width: 10%;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+}
+@media (min-width: 1272px) {
+    #description{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+    }
+    .title{
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        margin-bottom: 2%;
+    }
+    section{
+        background-color: #445566;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 hsla(0,0%,100%,.1);
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: start;
+        color: #DDEEFF;
+        font-family: inter;
+        line-height: 1.5;
+        gap: 4%;
+        margin-bottom: 3%;
+        font-size: 0.9em;
+    }
+    section img{
+        width: 10%;
+        margin-left: 1%;
+        margin-right: 3%;
+    }
+}
+@media (min-width: 768px ) and (max-width:  1272px) {
+    #description{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+    }
+    .title{
+        font-family: inter;
+        color: #99AABB;
+        font-size: 0.9rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        margin-bottom: 2%;
+    }
+    section{
+        background-color: #445566;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 hsla(0,0%,100%,.1);
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: start;
+        color: #DDEEFF;
+        font-family: inter;
+        line-height: 1.5;
+        gap: 4%;
+        margin-bottom: 3%;
+        font-size: 0.7em;
+    }
+    section img{
+        width: 10%;
+        margin-left: 1%;
+        margin-right: 3%;
+    }
+}

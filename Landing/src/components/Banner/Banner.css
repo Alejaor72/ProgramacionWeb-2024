@@ -1,0 +1,204 @@
+@media (max-width: 768px) {
+   .menubar {
+      display: none;
+    }
+    .menubar.show {
+      display: flex;
+    }
+    #bar div{
+      width: 100%;
+      color: #99AABB;
+      font-family: Inter;
+      font-size:  1rem;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0.96px;
+      margin: 2%;
+    }
+    #bar{
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+    #bar hr{
+      margin-top: 3%;
+      stroke-width: 10%;
+      color: #99AABB;
+    }
+    #bar a{
+      color: #99AABB;
+    }
+    #bar img{
+      width: 5%;
+      margin-right: 3.5%;
+    }
+    #bar .menu-item{
+      padding: 1%;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap:  2%;
+    }
+   .Banner{
+    width: 99%;
+    margin: 0%;
+    padding: 2%;
+    background-color: #14181c;
+    display: flex;
+    justify-content:end;
+   }
+   .Bottoms{
+    display: none;
+    width: 0%;
+   }
+   .input{
+    display: none;
+    width: 0%;
+   }
+   .logoLetterb{
+    display: none;
+    width: 0%;
+   }
+   .iconsBanner{
+    display: flex;
+    padding: 1%;
+    justify-content: end;
+   }
+   .iconB{
+    margin-right: 4%;
+   }
+}
+@media (min-width: 1272px) {
+   .menubar {
+      display: none;
+    }
+    .menubar.show {
+      display: none;
+    }
+   .Banner{
+      padding: 2%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 4%;
+      padding-right: 4%;
+      position: absolute;
+      background: rgb(20,24,28);
+      background: linear-gradient(180deg, rgba(20,24,28,1) 0%, rgba(20,24,28,0.7191548494397759) 28%, rgba(20,24,28,0.5146730567226891) 50%, rgba(20,24,28,0) 98%);
+     }
+     .Bottoms{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 26px;
+      color: #E3E3E3;
+      font-family: Inter;
+      font-size:  0.69rem;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0.96px;
+      margin-right: 5%;
+     }
+     .input{
+      display: flex;
+      width: 9.5em;
+      height: 2.4em;
+      flex-shrink: 0;
+      border-radius: 51em;
+      opacity: 0.3;
+      background: #D9D9D9;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+      padding-right: 1%;
+     }
+     .input img{
+       width: 1.6em;
+       height: 1.6em;
+       opacity: 100;
+     }
+     input{
+      width: 100%;
+      height: 100%;
+      opacity: 0%;
+      border: none;
+     }
+     .iconsBanner{
+      display: none;
+      width: 0%;
+     }
+     .logoLetterb{
+      width: 23%;
+      margin-right: 5%;
+     }
+}
+@media (min-width: 768px ) and (max-width:  1272px) {
+   .menubar {
+      display: none;
+    }
+    .menubar.show {
+      display: none;
+    }
+   .Banner{
+      padding: 2%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 4%;
+      padding-right: 4%;
+      position: absolute;
+      background: rgb(20,24,28);
+      background: linear-gradient(180deg, rgba(20,24,28,1) 0%, rgba(20,24,28,0.7191548494397759) 28%, rgba(20,24,28,0.5146730567226891) 50%, rgba(20,24,28,0) 98%);
+     }
+     .Bottoms{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 26px;
+      color: #E3E3E3;
+      font-family: Inter;
+      font-size:  0.31rem;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0.96px;
+      margin-right: 5%;
+     }
+     .input{
+      display: flex;
+      width: 9.5em;
+      height: 2.4em;
+      flex-shrink: 0;
+      border-radius: 51em;
+      opacity: 0.3;
+      background: #D9D9D9;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+      padding-right: 1%;
+     }
+     .input img{
+       width: 1.6em;
+       height: 1.6em;
+       opacity: 100;
+     }
+     input{
+      width: 100%;
+      height: 100%;
+      opacity: 0%;
+      border: none;
+     }
+     .iconsBanner{
+      display: none;
+      width: 0%;
+     }
+     .logoLetterb{
+      width: 23%;
+      margin-right: 5%;
+     }
+}

@@ -1,0 +1,696 @@
+@media (max-width: 768px) {
+main{
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 10%;
+}
+.MoviesRecomended{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 0.5rem;
+    margin-bottom: 12%;
+}
+.MoviesRecomended img{
+    width: 23%;
+    border-radius: 2px;
+}
+.OscarMovies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    height:  auto;
+}
+.OscarMoviesCards{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.OscarMoviesCards img{
+    width: 100%;
+    border-radius: 2px;
+}
+.OscarMovies h3{
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.75rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+.OscarMovies hr{
+    background-color: #99AABB;
+    height: 0.1px;
+}
+.OscarMovies p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: start;
+    color: #99AABB;
+    font-family: inter;
+    line-height: 1.5;
+    margin-top: 4%;
+    font-size: 0.9em;
+}
+.ReviewedMovies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+}
+.ReviewedMoviesCards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.ReviewedMoviesCards img{
+    width: 100%;
+    border-radius: 2px;
+}
+.ReviewedMovies #Info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+.ReviewedMovies h3{
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.75rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+.ReviewedMovies p{
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.6rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+.ReviewedMovies hr{
+    background-color: #99AABB;
+    height: 0.1px;
+}
+.PopularContent h2{
+    font-family: inter;
+    color: #AABBCC;
+    font-size: 1.43rem;
+    line-height: 1.23076923;
+    font-weight: 270;
+    margin-bottom: 3%;
+}
+.PopularContent{
+    padding-left: 1%;
+    padding-right: 1% ;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.PopularContent p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #99AABB;
+    font-family: inter;
+    line-height: 1.5;
+    font-size: 0.88em;
+}
+.RecentCont{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-family: inter;
+}
+.RecentCont #InfoRecent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-items: flex-start;
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.75rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+#InfoRecent h3{
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.75rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+.RecentCont img{
+  width: 100%;
+}
+.RecentCard{
+    margin-bottom: 5%;
+}
+.RecentCont hr{
+    margin-bottom: 2.5%;
+}
+.RecentCont h3{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: inter;
+    color: white;
+    font-size: 1rem;
+}
+.RecentCont p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.87rem;
+}
+.StoriesContent #InfoRecent{
+    font-family: inter;
+    color: #99AABB;
+    font-size: 0.75rem;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.StoriesGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 0.6rem;
+    margin-top: 4%;
+}
+.StoriesCard{
+  background-color:#303439 ;
+  display: flex;
+  flex-direction: column;
+  width:  100%;
+}
+.StoriesCard .card-text{
+    padding: 2%;
+}
+.StoriesCard .User{
+    display: flex;
+    flex-direction: row;
+}
+.card-text{
+    width: 22em;
+}
+.card-text h3 {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    text-wrap: balance;
+    color: white;
+    white-space: pre-wrap;
+}
+.StoriesCard img{
+    width: 100%;
+}
+}
+
+@media (min-width: 1272px) {
+    main{
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-top: 10%;
+    }
+    .MoviesRecomended{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-bottom: 6%;
+    }
+    .MoviesRecomended img{
+        width: 16%;
+        border-radius: 7px;
+    }
+    .OscarMovies{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        height:  auto;
+    }
+    .OscarMoviesCards{
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1%;
+        gap: 1%;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .OscarMoviesCards img{
+        width: 9%;
+        border-radius: 5px;
+    }
+    .OscarMovies h3{
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        margin-bottom: 0.7%;
+        font-weight: 300;
+    }
+    .OscarMovies hr{
+        background-color: #99AABB;
+        height: 0.1px;
+    }
+    .OscarMovies p{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align:left;
+        color: #99AABB;
+        font-family: inter;
+        line-height: 1.5;
+        margin-top: 1%;
+        font-size: 1.15em;
+    }
+    .ReviewedMovies{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        height:  auto;
+    }
+    .ReviewedMoviesCards{
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1%;
+        gap: 1%;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .ReviewedMoviesCards img{
+        width: 11%;
+        border-radius: 5px;
+    }
+    .ReviewedMovies #Info{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-items: flex-start;
+    }
+    .ReviewedMovies h3{
+        display: flex;
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        font-weight: 300;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .ReviewedMovies p{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        text-align:left;
+        color: #99AABB;
+        font-family: inter;
+        line-height: 1.5;
+        margin-top: 1%;
+        font-size: 0.9em;
+    }
+    .ReviewedMovies hr{
+        background-color: #99AABB;
+        height: 0.1px;
+    }
+    .PopularContent h2{
+        font-family: inter;
+        color: #AABBCC;
+        font-size: 2rem;
+        line-height: 1.23076923;
+        font-weight: 300;
+        margin-bottom: 1%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .PopularContent{
+        padding-left: 1%;
+        padding-right: 1% ;
+        display: flex;
+        margin-top: 3.8%;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .PopularContent p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        color: #99AABB;
+        font-family: inter;
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+    .PopularContent br{
+        display: none;
+        width: 0%;
+    }
+    .RecentGroup{
+        display: flex;
+        flex-direction:  row;
+        gap: 1%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .RecentCont{
+        margin-top: 3%;
+        font-family: inter;
+    }
+    .RecentCont #InfoRecent{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-items: flex-start;
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        font-weight: 300;
+        align-items: center;
+        align-content: center;
+    }
+    #InfoRecent h3{
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        margin-bottom: 1%;
+        font-weight: 300;
+    }
+    .RecentCont img{
+      width: 100%;
+    }
+    .RecentCard{
+        margin-bottom: 5%;
+    }
+    .RecentCont hr{
+        margin-bottom: 2.5%;
+    }
+    .RecentCont h3{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        font-family: inter;
+        color: white;
+        font-size: 1.7rem;
+    }
+    .RecentCont p{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+    }
+    .StoriesGroup{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: masonry;
+    }
+}
+@media (min-width: 768px ) and (max-width:  1272px) {
+    main{
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-top: 10%;
+    }
+    .MoviesRecomended{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-bottom: 6%;
+    }
+    .MoviesRecomended img{
+        width: 16%;
+        border-radius: 7px;
+    }
+    .OscarMovies{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        height:  auto;
+    }
+    .OscarMoviesCards{
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1%;
+        gap: 1%;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .OscarMoviesCards img{
+        width: 9%;
+        border-radius: 5px;
+    }
+    .OscarMovies h3{
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        margin-bottom: 0.7%;
+        font-weight: 300;
+    }
+    .OscarMovies hr{
+        background-color: #99AABB;
+        height: 0.1px;
+    }
+    .OscarMovies p{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align:left;
+        color: #99AABB;
+        font-family: inter;
+        line-height: 1.5;
+        margin-top: 1%;
+        font-size: 1.15em;
+    }
+    .ReviewedMovies{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        height:  auto;
+    }
+    .ReviewedMoviesCards{
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1%;
+        gap: 1%;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .ReviewedMoviesCards img{
+        width: 11%;
+        border-radius: 5px;
+    }
+    .ReviewedMovies #Info{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-items: flex-start;
+    }
+    .ReviewedMovies h3{
+        display: flex;
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        font-weight: 300;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .ReviewedMovies p{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        text-align:left;
+        color: #99AABB;
+        font-family: inter;
+        line-height: 1.5;
+        margin-top: 1%;
+        font-size: 0.9em;
+    }
+    .ReviewedMovies hr{
+        background-color: #99AABB;
+        height: 0.1px;
+    }
+    .PopularContent h2{
+        font-family: inter;
+        color: #AABBCC;
+        font-size: 2rem;
+        line-height: 1.23076923;
+        font-weight: 300;
+        margin-bottom: 1%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .PopularContent{
+        padding-left: 1%;
+        padding-right: 1% ;
+        display: flex;
+        margin-top: 3.8%;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .PopularContent p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        color: #99AABB;
+        font-family: inter;
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+    .PopularContent br{
+        display: none;
+        width: 0%;
+    }
+    .RecentGroup{
+        display: flex;
+        flex-direction:  row;
+        gap: 1%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .RecentCont{
+        margin-top: 3%;
+        font-family: inter;
+    }
+    .RecentCont #InfoRecent{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-items: flex-start;
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        font-weight: 300;
+        align-items: center;
+        align-content: center;
+    }
+    #InfoRecent h3{
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+        letter-spacing: .075em;
+        text-transform: uppercase;
+        margin-bottom: 1%;
+        font-weight: 300;
+    }
+    .RecentCont img{
+      width: 100%;
+    }
+    .RecentCard{
+        margin-bottom: 5%;
+    }
+    .RecentCont hr{
+        margin-bottom: 2.5%;
+    }
+    .RecentCont h3{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        font-family: inter;
+        color: white;
+        font-size: 1.7rem;
+    }
+    .RecentCont p{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-family: inter;
+        color: #99AABB;
+        font-size: 1rem;
+    }
+    .StoriesGroup{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: masonry;
+    }
+}
