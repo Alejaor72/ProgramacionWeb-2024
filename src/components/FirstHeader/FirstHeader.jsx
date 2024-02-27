@@ -1,14 +1,15 @@
 import React from "react"
 import './FirstHeader.css'
+import { images } from "../../data/images"
 
 export function FirstHeader(){
     return(
        <>
         
         <div className="first-header">
-            <img src="https://i.postimg.cc/52yWhD02/Group-5.jpg" alt="" className="headerImage"/>
+            <img src={images[0].src} alt="" className="headerImage"/>
             <div className="headerContent">
-                <img src="https://i.postimg.cc/SNqnZxhc/Group-2.png" alt="logo" className="logoLetterb2"/>
+                <img src={images[3].src} alt="logo" className="logoLetterb2"/>
                 <div className="headerContentText">
                     <p className="description">
                     Track films youve watched.<br />
@@ -26,5 +27,3 @@ export function FirstHeader(){
        </>
      )
 }
-
-//<img src="https://i.postimg.cc/CKgCbSp7/image-3.jpg" alt="" className="headerImage"/>
