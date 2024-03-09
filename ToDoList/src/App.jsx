@@ -1,34 +1,81 @@
 //Trabajo realizado por Andrea Oviedo y Alejandra Ordoñez
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import React, { useState, useEffect } from 'react'
+import { Footer } from './components/Footer/Footer'
+import { Header } from './components/Header/Header'
+import { Form } from './components/Form/Form'
+import { Filters } from './components/Filters/Filters'
+import { List } from './components/List/List'
 
-function App() {
-  const [count, setCount] = useState(0)
+function App () {
+  const [tasks, setTasks] = useState([])
+  const [selectedFilter, setSelectedFilter] = useState('all')
+
+  useEffect(() => {
+    console.log('Task List', tasks)
+  }, [tasks])
+
+  const addTask = (text) => {
+    const newTask = {
+      id: Date.now(),
+      text,
+      completed: false
+    }
+    setTasks([...tasks, newTask])
+  }
+
+  const deleteTask = (idTask) => {
+    setTasks(tasks.filter(task => task.id !== idTask))
+  }
+
+  const handleToggleCompleted = (taskId) => {
+    setTasks(tasks.map(task => {
+      if (task.id === taskId) {
+        return { ...task, completed: !task.completed }
+      }
+      return task
+    }))
+  }
+
+  const filteredTasks = tasks.filter(task => {
+    if (selectedFilter === 'completed') {
+      return task.completed
+    }
+    if (selectedFilter === 'pending') {
+      return !task.completed
+    }
+    return task
+  })
+
+  const changeFilterList = (e) => {
+    const filterValue = e.target.value
+    setSelectedFilter(filterValue)
+  }
+
+  const clearAllCompletedTasks = () => {
+    setTasks(tasks.filter(task => task.completed !== true))
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Form
+        addTask={addTask}
+      />
+      <Filters
+        selectedFilter={selectedFilter}
+        changeFilterList={changeFilterList}
+      />
+
+      <List
+        items={filteredTasks}
+        onToggleCompleted={handleToggleCompleted}
+        deleteTask={deleteTask}
+      />
+      <Footer
+        tasks={tasks}
+        handleClick={clearAllCompletedTasks}
+      />
     </>
   )
 }
