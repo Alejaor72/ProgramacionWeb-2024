@@ -1,6 +1,6 @@
 import './App.css'
 import React, { useState, useEffect } from 'react'
-import { Footer } from './components/Footer/Footer'
+import { Activity } from './components/Activity/Activity'
 import { Header } from './components/Header/Header'
 import { Form } from './components/Form/Form'
 import { Filters } from './components/Filters/Filters'
@@ -75,7 +75,7 @@ function App() {
         selectedCategory={selectedCategory} 
         changeCategory={changeCategory}
         />
-        <Footer
+        <Activity
         tasks={tasks}
         handleClick={clearAllCompletedTasks}
         />
