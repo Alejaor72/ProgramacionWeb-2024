@@ -1,4 +1,3 @@
-//Trabajo realizado por Andrea Oviedo y Alejandra Ordoñez
 import './App.css'
 import React, { useState, useEffect } from 'react'
 import { Footer } from './components/Footer/Footer'
@@ -7,18 +6,20 @@ import { Form } from './components/Form/Form'
 import { Filters } from './components/Filters/Filters'
 import { List } from './components/List/List'
 
-function App () {
+function App() {
   const [tasks, setTasks] = useState([])
   const [selectedFilter, setSelectedFilter] = useState('all')
+  const [selectedCategory, setSelectedCategory] = useState('')
 
   useEffect(() => {
     console.log('Task List', tasks)
   }, [tasks])
 
-  const addTask = (text) => {
+  const addTask = (text, category) => { 
     const newTask = {
       id: Date.now(),
       text,
+      category,
       completed: false
     }
     setTasks([...tasks, newTask])
@@ -44,12 +45,20 @@ function App () {
     if (selectedFilter === 'pending') {
       return !task.completed
     }
+    if (selectedCategory && selectedCategory !== 'all') {
+      return task.category === selectedCategory
+    }
     return task
   })
 
   const changeFilterList = (e) => {
     const filterValue = e.target.value
     setSelectedFilter(filterValue)
+  }
+
+  const changeCategory = (e) => { 
+    const categoryValue = e.target.value
+    setSelectedCategory(categoryValue)
   }
 
   const clearAllCompletedTasks = () => {
@@ -59,22 +68,26 @@ function App () {
   return (
     <>
       <Header />
-      <Form
-        addTask={addTask}
-      />
-      <Filters
+      <div className='Activity'>
+        <Filters
         selectedFilter={selectedFilter}
         changeFilterList={changeFilterList}
+        selectedCategory={selectedCategory} 
+        changeCategory={changeCategory}
+        />
+        <Footer
+        tasks={tasks}
+        handleClick={clearAllCompletedTasks}
+        />
+      </div>
+      <Form
+        addTask={addTask}
+        selectedCategory={selectedCategory}
       />
-
       <List
         items={filteredTasks}
         onToggleCompleted={handleToggleCompleted}
         deleteTask={deleteTask}
-      />
-      <Footer
-        tasks={tasks}
-        handleClick={clearAllCompletedTasks}
       />
     </>
   )

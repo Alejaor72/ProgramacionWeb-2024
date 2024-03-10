@@ -1,43 +1,36 @@
 import PropTypes from 'prop-types'
 
-export const Filters = ({ selectedFilter, changeFilterList }) => {
+export const Filters = ({ selectedFilter, changeFilterList, selectedCategory, changeCategory }) => {
   const checkedInput = (value) => selectedFilter === value
 
   const handleFilterChange = (e) => {
     changeFilterList(e)
   }
 
+  const handleCategoryChange = (e) => {
+    changeCategory(e)
+  }
+
   return (
     <section className='filters-section'>
 
       <div>
-        <input
-          type='radio'
-          name='filter'
-          value='all'
-          checked={checkedInput('all')}
-          onChange={handleFilterChange}
-        />All <br />
+        <label>Filter by:</label>
+        <select onChange={handleFilterChange} value={selectedFilter}>
+          <option value='all'>All</option>
+          <option value='completed'>Completed</option>
+          <option value='pending'>Pending</option>
+        </select>
       </div>
 
       <div>
-        <input
-          type='radio'
-          name='filter'
-          value='completed'
-          checked={checkedInput('completed')}
-          onChange={handleFilterChange}
-        />Completed <br />
-      </div>
-
-      <div>
-        <input
-          type='radio'
-          name='filter'
-          value='pending'
-          checked={checkedInput('pending')}
-          onChange={handleFilterChange}
-        />Pending <br />
+        <label>Categories:</label>
+        <select onChange={handleCategoryChange} value={selectedCategory}>
+          <option value=''>All</option>
+          <option value='home'>Home</option>
+          <option value='university'>University</option>
+          <option value='personal'>Personal</option>
+        </select>
       </div>
 
     </section>
@@ -46,5 +39,7 @@ export const Filters = ({ selectedFilter, changeFilterList }) => {
 
 Filters.propTypes = {
   selectedFilter: PropTypes.string.isRequired,
-  changeFilterList: PropTypes.func.isRequired
+  changeFilterList: PropTypes.func.isRequired,
+  selectedCategory: PropTypes.string.isRequired,
+  changeCategory: PropTypes.func.isRequired
 }

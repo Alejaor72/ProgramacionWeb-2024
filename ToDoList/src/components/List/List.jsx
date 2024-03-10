@@ -6,10 +6,11 @@ export const List = ({ items, onToggleCompleted, deleteTask }) => {
     <section className='list'>
 
       {items.length !== 0
-        ? (items.map(({ id, text, completed }) => (
+        ? (items.map(({ id, text, category, completed }) => (
           <Task
             key={id}
             text={text}
+            category={category} 
             id={id}
             completed={completed}
             onToggleCompleted={() => onToggleCompleted(id)}
