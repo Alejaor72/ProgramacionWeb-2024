@@ -7,7 +7,7 @@ export const Activity = ({ tasks, handleClick }) => {
 
   return (
     <section className='activityButton'>
-      <p>{completedTasks} {completedTasks <= 1 & completedTasks !== 0 ? 'Tarea completada' : 'Tareas completadas'} de {allTasks} </p>
+      <p>{completedTasks} {completedTasks <= 1 & completedTasks !== 0 ? 'Task completed' : 'Tasks completed'} de {allTasks} </p>
       <Button
         type='clear-completed'
         text='Clear All Completed'
