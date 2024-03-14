@@ -1,18 +1,18 @@
 import './App.css'
 import React, { useState, useEffect } from 'react'
-import { Activity } from './components/Activity/Activity'
-import { Header } from './components/Header/Header'
-import { Form } from './components/Form/Form'
-import { Filters } from './components/Filters/Filters'
-import { List } from './components/List/List'
+import { Activity, Header,Form, Filters ,List } from './components'
 
 function App() {
   const [tasks, setTasks] = useState([])
   const [selectedFilter, setSelectedFilter] = useState('all')
   const [selectedCategory, setSelectedCategory] = useState('')
+  
+  useEffect( () => {
+    window.localStorage.setItem("tasks", JSON.stringify(tasks))
+  } , [tasks])
 
   useEffect(() => {
-    console.log('Task List', tasks)
+    window.localStorage.setItem("tasks", JSON.stringify(tasks))
   }, [tasks])
 
   const addTask = (text, category) => { 
