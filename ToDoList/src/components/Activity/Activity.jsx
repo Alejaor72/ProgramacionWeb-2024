@@ -1,4 +1,4 @@
-import { Button } from '../elements/Button/Button'
+import { Button } from '../Button/Button'
 import PropTypes from 'prop-types'
 
 export const Activity = ({ tasks, handleClick }) => {

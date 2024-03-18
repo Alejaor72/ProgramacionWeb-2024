@@ -8,7 +8,7 @@ export const Form = ({ addTask }) => {
 
   const updateText = (e) => {
     setText(e.target.value)
-    console.log('textUpdate', text)
+    //console.log('textUpdate', text)
   }
 
   const onSubmmit = (e) => {

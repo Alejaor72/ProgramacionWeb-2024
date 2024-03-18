@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types'
 
-export const Filters = ({ selectedFilter, changeFilterList, selectedCategory, changeCategory }) => {
-  const checkedInput = (value) => selectedFilter === value
-
+export const Filters = ({ selectedFilter, changeFilter, selectedCategory, changeCategory }) => {
   const handleFilterChange = (e) => {
-    changeFilterList(e)
+    changeFilter(e.target.value)
   }
 
   const handleCategoryChange = (e) => {
-    changeCategory(e)
+    changeCategory(e.target.value)
   }
 
   return (
@@ -39,7 +37,7 @@ export const Filters = ({ selectedFilter, changeFilterList, selectedCategory, ch
 
 Filters.propTypes = {
   selectedFilter: PropTypes.string.isRequired,
-  changeFilterList: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
   selectedCategory: PropTypes.string.isRequired,
   changeCategory: PropTypes.func.isRequired
 }

@@ -1,5 +1,5 @@
 export * from './Activity/Activity'
-export * from './elements/Button/Button'
+export * from './Button/Button'
 export * from './Filters/Filters'
 export * from './Form/Form'
 export * from './Header/Header'

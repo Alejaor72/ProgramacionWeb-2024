@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Button } from '../../elements/Button/Button'
+import { Button } from '../../Button/Button'
 
 export const Task = ({ text, category, completed, id, onToggleCompleted, deleteTask }) => {
   const handleToggleCompleted = () => {
