@@ -1,0 +1,8 @@
+
+
+@media (min-width: 1025px){
+    .activityButton button{
+        background-color: rgb(255, 152, 152);
+        color: rgb(202, 39, 39);
+    }
+}

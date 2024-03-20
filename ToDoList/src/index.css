@@ -1,10 +1,8 @@
-*{
-  background-color: #DCD6FA;
-}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  background-color: #DCD6FA;
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);

@@ -1,5 +1,6 @@
 import { Button } from '../Button/Button'
 import PropTypes from 'prop-types'
+import './Activity.css'
 
 export const Activity = ({ tasks, handleClick }) => {
   const allTasks = tasks.length

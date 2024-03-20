@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import './Filters.css'
 
 export const Filters = ({ selectedFilter, changeFilter, selectedCategory, changeCategory }) => {
   const handleFilterChange = (e) => {
