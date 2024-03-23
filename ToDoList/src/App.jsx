@@ -1,40 +1,25 @@
 import './App.css';
-import React from 'react';
 import { Header, Form, Filters, List, Activity } from './components';
-import useTasks from './hooks/useTasks';
+import React, { useEffect } from 'react';
+import { saveStorage } from './hooks/taskStorage';
+import { useTasks } from './hooks/useTasks';
+
 
 function App() {
-  const {
-    tasks,
-    selectedFilter,
-    selectedCategory,
-    filteredTasks,
-    addTask,
-    deleteTask,
-    toggleCompleted,
-    changeFilter,
-    changeCategory,
-    clearAllCompletedTasks,
-  } = useTasks();
+  const { tasks } = useTasks()
+  useEffect(() => {
+    saveStorage('tasks', tasks)
+  }, [tasks])
 
   return (
     <>
       <Header />
       <div className='Activity'>
-        <Filters
-          selectedFilter={selectedFilter}
-          changeFilter={changeFilter} 
-          selectedCategory={selectedCategory}
-          changeCategory={changeCategory}
-        />
-        <Activity tasks={tasks} handleClick={clearAllCompletedTasks} />
+        <Filters/>
+        <Activity/>
       </div>
-      <Form addTask={addTask} selectedCategory={selectedCategory} changeCategory={changeCategory} />
-      <List
-        items={filteredTasks}
-        onToggleCompleted={toggleCompleted}
-        deleteTask={deleteTask}
-      />
+      <Form/>
+      <List/>
     </>
   );
 }

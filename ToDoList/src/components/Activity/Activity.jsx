@@ -1,25 +1,29 @@
-import { Button } from '../Button/Button'
-import PropTypes from 'prop-types'
-import './Activity.css'
+import React, { useContext } from 'react';
+import { Button } from '../Button/Button';
+import { TasksContext } from '../../context/TasksContext';
+import './Activity.css';
 
-export const Activity = ({ tasks, handleClick }) => {
-  const allTasks = tasks.length
-  const completedTasks = tasks.filter(task => task.completed === true).length
+export const Activity = () => {
+  const { allTasks, completedTasks, clearAllCompletedTasks } = useContext(
+    TasksContext
+  );
 
   return (
     <section className='activityButton'>
-      <p>{completedTasks} {completedTasks <= 1 & completedTasks !== 0 ? 'Task completed' : 'Tasks completed'} de {allTasks} </p>
+      <p>
+        {completedTasks}{' '}
+        {completedTasks <= 1 & completedTasks !== 0
+          ? 'Task completed'
+          : 'Tasks completed'}{' '}
+        de {allTasks}{' '}
+      </p>
       <Button
         type='clear-completed'
         text='Clear All Completed'
-        handleClick={handleClick}
+        handleClick={clearAllCompletedTasks}
         id={Date.now()}
+        category=''
       />
     </section>
-  )
-}
-
-Activity.propTypes = {
-  tasks: PropTypes.array.isRequired,
-  handleClick: PropTypes.func.isRequired
-}
+  );
+};

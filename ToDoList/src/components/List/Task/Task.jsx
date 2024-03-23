@@ -1,10 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Button } from '../../Button/Button'
+import { useTasks } from '../../../hooks/useTasks'
 
-export const Task = ({ text, category, completed, id, onToggleCompleted, deleteTask }) => {
-  const handleToggleCompleted = () => {
-    onToggleCompleted()
+
+export const Task = ({ text, category, completed, id }) => {
+  const { toggleCompleted, deleteTask } = useTasks()
+  
+  const handleToggleCompleted = (e) => {
+    toggleCompleted(id, e.target.checked)
   }
 
   return (
@@ -14,7 +18,7 @@ export const Task = ({ text, category, completed, id, onToggleCompleted, deleteT
         <input
           type='checkbox'
           checked={completed}
-          onChange={handleToggleCompleted}
+          onChange={(e) => handleToggleCompleted(e)}
         />
         <p>{text}</p>
         <p>{category}</p>
@@ -34,7 +38,5 @@ Task.propTypes = {
   text: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   completed: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
-  onToggleCompleted: PropTypes.func.isRequired,
-  deleteTask: PropTypes.func.isRequired
+  id: PropTypes.number.isRequired
 }

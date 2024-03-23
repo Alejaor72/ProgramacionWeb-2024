@@ -1,18 +1,25 @@
-import PropTypes from 'prop-types'
-import './Filters.css'
+import React, { useContext } from 'react';
+import { TasksContext } from '../../context/TasksContext';
+import './Filters.css';
 
-export const Filters = ({ selectedFilter, changeFilter, selectedCategory, changeCategory }) => {
+export const Filters = () => {
+  const {
+    selectedFilter,
+    changeFilter,
+    selectedCategory,
+    changeCategory
+  } = useContext(TasksContext);
+
   const handleFilterChange = (e) => {
-    changeFilter(e.target.value)
-  }
+    changeFilter(e.target.value);
+  };
 
   const handleCategoryChange = (e) => {
-    changeCategory(e.target.value)
-  }
+    changeCategory(e.target.value);
+  };
 
   return (
     <section className='filters-section'>
-
       <div>
         <label>Filter by:</label>
         <select onChange={handleFilterChange} value={selectedFilter}>
@@ -24,21 +31,13 @@ export const Filters = ({ selectedFilter, changeFilter, selectedCategory, change
 
       <div>
         <label>Categories:</label>
-        <select onChange={handleCategoryChange} value={selectedCategory}>
+        <select onChange={handleCategoryChange} value={selectedCategory || ''}>
           <option value=''>All</option>
           <option value='home'>Home</option>
           <option value='university'>University</option>
           <option value='personal'>Personal</option>
         </select>
       </div>
-
     </section>
-  )
-}
-
-Filters.propTypes = {
-  selectedFilter: PropTypes.string.isRequired,
-  changeFilter: PropTypes.func.isRequired,
-  selectedCategory: PropTypes.string.isRequired,
-  changeCategory: PropTypes.func.isRequired
-}
+  );
+};

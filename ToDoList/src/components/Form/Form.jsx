@@ -1,33 +1,34 @@
-import PropTypes from 'prop-types'
-import { useState } from 'react'
-import './Form.css'
+import React, { useState } from 'react';
+import { useTasks } from '../../hooks/useTasks';
+import './Form.css';
 
-export const Form = ({ addTask }) => {
-  const [text, setText] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('') 
-  const isSubmitDisabled = text.length < 1
+export const Form = () => {
+  const { addTask } = useTasks();
+  const [text, setText] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const isSubmitDisabled = text.length < 1;
 
   const updateText = (e) => {
-    setText(e.target.value)
-    //console.log('textUpdate', text)
-  }
+    setText(e.target.value);
+  };
 
-  const onSubmmit = (e) => {
-    e.preventDefault()
-    addTask(text, selectedCategory)
-    setText('')
-  }
+  const onSubmit = (e) => {
+    e.preventDefault();
+    addTask(text, selectedCategory);
+    setText('');
+    setSelectedCategory('');
+  };
 
   const onChangeText = (e) => {
-    updateText(e)
-  }
+    updateText(e);
+  };
 
   const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value)
-  }
+    setSelectedCategory(e.target.value);
+  };
 
   return (
-    <form onSubmit={onSubmmit} className='form'>
+    <form onSubmit={onSubmit} className='form'>
       <input
         type='text'
         placeholder='Task'
@@ -50,9 +51,5 @@ export const Form = ({ addTask }) => {
         disabled={isSubmitDisabled}
       />
     </form>
-  )
-}
-
-Form.propTypes = {
-  addTask: PropTypes.func.isRequired
-}
+  );
+};
