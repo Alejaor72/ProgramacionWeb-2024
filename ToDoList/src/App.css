@@ -1,7 +1,9 @@
-@media (min-width: 375px) and (max-width: 1024px){
+@media (max-width: 1024px){
   #root {
     width: 100%;
     margin: 0 auto;
+    margin-left: 4%;
+    margin-right: 4%;
     padding: 1rem;
     text-align: center;
     border-radius: 1rem;
@@ -14,6 +16,8 @@
   #root {
     width: 100%;
     margin: 0 auto;
+    margin-left: 4%;
+    margin-right: 4%;
     padding: 2rem;
     text-align: center;
     border-radius: 2rem;

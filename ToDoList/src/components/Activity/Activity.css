@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 1024px){
+@media (max-width: 1024px){
     .activityButton button{
         background-color: rgb(255, 152, 152);
         color: rgb(202, 39, 39);
@@ -15,6 +15,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
+        font-family: raleway;
     }
     section.activityButton p{
         color: rgb(202, 39, 39);

@@ -29,6 +29,7 @@ export const Form = () => {
 
   return (
     <form onSubmit={onSubmit} className='form'>
+      <h3>New Task</h3>
       <input
         type='text'
         placeholder='Task'

@@ -1,7 +1,11 @@
-@media (min-width: 375px) and (max-width: 1024px){
+@media (max-width: 1024px){
+    h3{
+        color: white;
+    }
     .form{
         height: 6rem;
         background: var(--1, linear-gradient(173deg, #B9A4F1 5.39%, #9370FF 94.69%));
+        font-family: raleway;
     }
     
     .form.form{
@@ -24,6 +28,7 @@
         border-radius: 0.5rem;
         height: 2rem;
         width: 8rem;
+        font-family: raleway;
     }
     
     .form input.submit-input{
@@ -33,6 +38,7 @@
         width: 5rem;
         color: white;
         background: linear-gradient(173deg, #916DF3 5.39%, #5323E4 94.69%);
+        font-family: raleway;
     }
 
     select.category-select{
@@ -40,6 +46,7 @@
         width: 5rem;
         height: 2rem;
         border-radius: 0.5rem;
+        font-family: raleway;
     }
 }
 
@@ -47,6 +54,7 @@
     .form{
         height: 6rem;
         background: var(--1, linear-gradient(173deg, #B9A4F1 5.39%, #9370FF 94.69%));
+        font-family: raleway;
     }
     
     .form.form{
@@ -69,6 +77,7 @@
         border-radius: 1rem;
         height: 3rem;
         width: 30rem;
+        font-family: raleway;
     }
     
     .form input.submit-input{
@@ -77,11 +86,13 @@
         width: 6rem;
         color: white;
         background: linear-gradient(173deg, #916DF3 5.39%, #5323E4 94.69%);
+        font-family: raleway;
     }
 
     select.category-select{
         background: #F9B577;
         height: 3rem;
         border-radius: 0.5rem;
+        font-family: raleway;
     }
 }
