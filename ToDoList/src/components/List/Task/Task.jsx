@@ -23,7 +23,7 @@ export const Task = ({ text, category, completed, id }) => {
           onChange={(e) => handleToggleCompleted(e)}
         />
         <p>{text}</p>
-        <p>{category}</p>
+        <p className={category === 'home' ? 'home-category' : category === 'university' ? 'university-category' : category === 'personal' ? 'personal-category' : 'default-category'}>{category}</p>
       </div>
 
       <Button

@@ -1,3 +1,25 @@
+/*@media (min-width: 375px) and (max-width: 1024px){
+    .activityButton button{
+        background-color: rgb(255, 152, 152);
+        color: rgb(202, 39, 39);
+    }
+    div.Activity{
+        width: 100%;
+        display: flex;
+        background: #FFF;
+        border-radius: 1rem;
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+    section.activityButton p{
+        color: rgb(202, 39, 39);
+        margin: 5%;
+    }
+}*/
+
+
 @media (min-width: 1025px){
     .activityButton button{
         background-color: rgb(255, 152, 152);

@@ -1,12 +1,28 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 2rem;
-  border: 0.1rem solid #FFF;
-  background: rgba(255, 255, 255, 0.40);
+@media (min-width: 375px) and (max-width: 1024px){
+  #root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: 0.1rem solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+  }
 }
+
+@media (min-width: 1025px){
+  #root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: 0.1rem solid #FFF;
+    background: rgba(255, 255, 255, 0.40);
+  }
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
