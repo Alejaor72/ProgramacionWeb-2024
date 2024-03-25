@@ -1,6 +1,6 @@
 @media (min-width: 375px) and (max-width: 1024px){
     .headerDiv{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         color: white;
