@@ -1,0 +1,53 @@
+@media (min-width: 1025px){
+    .task{
+        background: #FFF;
+        border-radius: 1rem;
+        margin-top: 1rem;;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 5rem;
+        gap: 25em;
+    }
+
+    .task Button{
+        height: 3rem;
+        background-color: rgb(255, 152, 152);
+        color: rgb(202, 39, 39);
+    }
+    
+    .taskInfo{
+        width: 15rem;
+        gap: 1rem;
+        display: flex;
+        padding-left: 3rem;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .taskInfo p{
+        font-size: 150%;
+    }
+
+    input.checkbox-input{
+        appearance: none;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        outline: none;
+        cursor: pointer;
+        background: var(--1, linear-gradient(173deg, #dca8ff 5.39%, #cb77ff 94.69%));
+    }
+    input.checkbox-input:checked{
+        appearance: none;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        outline: none;
+        cursor: pointer;
+        background: var(--1, linear-gradient(173deg, #aaff9d 5.39%, #92ff81 94.69%));
+    }
+
+}
+
+

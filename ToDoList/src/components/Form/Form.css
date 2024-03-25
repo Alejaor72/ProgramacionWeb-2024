@@ -1,15 +1,17 @@
 @media (min-width: 1025px){
     .form{
-        height: 4rem;
-        background-color: rgb(0, 8, 255);
+        height: 6rem;
+        background: var(--1, linear-gradient(173deg, #B9A4F1 5.39%, #9370FF 94.69%));
     }
     
     .form.form{
+        margin-top: 2rem;
         display: flex;
         flex-direction: row;
         gap: 1rem;
         justify-content: center;
         align-items: center;
+        border-radius: 1rem;
     }
     
     .form input{
@@ -21,16 +23,20 @@
         background-color: white;
         border-radius: 1rem;
         height: 3rem;
-        width: 20rem;
+        width: 30rem;
     }
     
     .form input.submit-input{
-        height: 2rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        width: 6rem;
+        color: white;
+        background: linear-gradient(173deg, #916DF3 5.39%, #5323E4 94.69%);
     }
-    
+
     select.category-select{
-        background-color: brown;
-        height: 2rem;
+        background: #F9B577;
+        height: 3rem;
         border-radius: 0.5rem;
     }
 }

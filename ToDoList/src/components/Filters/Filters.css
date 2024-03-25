@@ -25,7 +25,7 @@
         align-items: center;
         gap: 2rem;
     }
-    select{
+    .filters-section select{
         background-color: rgb(255, 188, 152);   
         border-color: white;
         border-width: 0.1em;

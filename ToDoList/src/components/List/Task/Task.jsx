@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Button } from '../../Button/Button'
 import { useTasks } from '../../../hooks/useTasks'
+import './Task.css';
 
 
 export const Task = ({ text, category, completed, id }) => {
@@ -14,8 +15,9 @@ export const Task = ({ text, category, completed, id }) => {
   return (
     <div className='task'>
 
-      <div>
+      <div className='taskInfo'>
         <input
+          className='checkbox-input'
           type='checkbox'
           checked={completed}
           onChange={(e) => handleToggleCompleted(e)}
